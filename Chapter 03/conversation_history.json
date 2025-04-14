@@ -1,0 +1,10 @@
+[
+  {
+    "role": "assistant",
+    "content": "How do I reset my password?"
+  },
+  {
+    "role": "user",
+    "content": "Category: Account Management\nResolution: To reset your password, please follow these steps:\n\n1. Go to the login page of our website or application.\n2. Click on the 'Forgot Password' link.\n3. Enter your registered email address or username.\n4. Click on the 'Reset Password' button.\n5. You will receive an email with a password reset link. Click on this link.\n6. Enter a new password and confirm it by re-entering it in the next field.\n7. Click on the 'Save Changes' button to update your password.\n\nIf you are having trouble resetting your password, please contact our support team for assistance."
+  }
+]

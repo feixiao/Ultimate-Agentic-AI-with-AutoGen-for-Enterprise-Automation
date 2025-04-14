@@ -1,0 +1,14 @@
+{
+    "test_data": [
+      {
+        "question": "How do I request a refund?",
+        "expectation": "You can request a refund by visiting our Returns page and filling out the refund form.",
+        "category": "Refund Request"
+      },
+      {
+        "question": "What are your shipping options?",
+        "expectation": "We offer standard and expedited shipping options. You can choose your preference at checkout." ,
+        "category": "Shipping Inquiry"
+      }
+    ]
+}

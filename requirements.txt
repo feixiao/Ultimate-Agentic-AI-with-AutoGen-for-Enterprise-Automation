@@ -1,0 +1,18 @@
+# pip install -r requirements.txt
+tiktoken
+pyautogen
+transformers
+sentence-transformers
+scikit-learn
+rank-bm25
+together
+faiss-cpu
+networkx
+numpy
+pandas
+
+openai 
+python-dotenv 
+chromadb 
+docker
+ipykernel

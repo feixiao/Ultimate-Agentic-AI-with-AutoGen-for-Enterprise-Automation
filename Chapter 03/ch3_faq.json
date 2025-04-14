@@ -1,0 +1,12 @@
+{
+    "FAQs": [
+      {
+        "question": "How do I request a refund?",
+        "response": "You can request a refund by visiting our Returns page and filling out the refund form."
+      },
+      {
+        "question": "What are your shipping options?",
+        "response": "We offer standard and expedited shipping options. You can choose your preference at checkout."
+      }
+    ]
+}
