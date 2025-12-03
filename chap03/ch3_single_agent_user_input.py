@@ -1,4 +1,4 @@
-import autogen
+import autogen_core as autogen
 import json
 import os
 import sys

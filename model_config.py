@@ -3,11 +3,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-GENERATION_MODEL = "mistralai/Mixtral-8x7B-Instruct-v0.1"
-AGENT_MODEL = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
-API_KEY = "<together_ai_key>"
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-
+# GENERATION_MODEL = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+# AGENT_MODEL = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+# API_KEY = "<together_ai_key>"
+# EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+GENERATION_MODEL = os.getenv("GENERATION_MODEL") or "qwen3:8b"
+AGENT_MODEL = os.getenv("AGENT_MODEL") or "qwen3:8b"
+API_KEY = os.getenv("TOGETHER_AI_KEY") or "test"
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL") or "qwen3:8b"
 
 # config keys - TogetherAI Llama
 config_list = [
