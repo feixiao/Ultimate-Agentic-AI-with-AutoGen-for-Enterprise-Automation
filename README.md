@@ -42,6 +42,9 @@ This project utilizes various Python libraries for natural language processing, 
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
+
+   pyenv virtualenv 3.12 autogen-dev
+   pyenv activate autogen-dev 
    ```
 
    For Windows:
