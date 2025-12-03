@@ -7,8 +7,7 @@ import sys
 # Append the project root directory to sys.path for module discovery
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-# Import configuration settings from model_config module
-from model_config import *
+from . import llm_config
 
 # Configure logging to log both to a file and the console
 logging.basicConfig(
