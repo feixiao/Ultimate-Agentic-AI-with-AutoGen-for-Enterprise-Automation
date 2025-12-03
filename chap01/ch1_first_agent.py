@@ -1,15 +1,27 @@
 import os
-import os
 import sys
 
-# Use pyautogen 0.7.5 API
+# Use pyautogen 0.7.5 classic API
 import autogen
 
-# Append the project root to sys.path for module discovery
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# llm_config for local Ollama
+ollama_host = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+ollama_model = os.getenv("OLLAMA_MODEL", "qwen3:8b")
 
-# Import configuration settings from model_config module
-from model_config import llm_config
+llm_config = {
+    "config_list": [
+        {
+            "model": ollama_model,
+            "api_type": "ollama",
+            "api_base": ollama_host,
+        }
+    ],
+    # Disable disk caching to avoid sqlite schema issues
+    "cache_seed": None,
+    # Optional runtime params
+    "temperature": 0,
+    "timeout": 120,
+}
 
 # Create an assistant agent with a given name, LLM configuration, and system prompt.
 assistant = autogen.AssistantAgent(

@@ -73,7 +73,7 @@ This project utilizes various Python libraries for natural language processing, 
 Navigate to a chapter folder and execute:
 
 ```bash
-cd src/chapters/ch01
+cd chap01
 python ch1_first_agent.py
 ```
 
