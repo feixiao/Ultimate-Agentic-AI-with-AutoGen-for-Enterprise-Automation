@@ -26,6 +26,8 @@ This project utilizes various Python libraries for natural language processing, 
 - Virtual environment tool (recommended)
 - 8GB+ RAM recommended for running larger models
 
+
+
 ## Setup Instructions
 
 ### Manual Setup
@@ -43,8 +45,9 @@ This project utilizes various Python libraries for natural language processing, 
    python3 -m venv .venv
    source .venv/bin/activate
 
-   pyenv virtualenv 3.12 autogen-dev
-   pyenv activate autogen-dev 
+   uv python install  3.12 3.14   
+   uv venv
+   source .venv/bin/activate
    ```
 
    For Windows:
