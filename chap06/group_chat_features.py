@@ -14,8 +14,10 @@ from autogen import (
     GroupChatManager,
 )
 
+from chap06 import llm_config
+
 # Configuration for language model (LLM)
-llm_config = {}
+llm_config["temperature"] = 0.7  # Set temperature for response variability
 agents = []
 
 # -----------------------------------------------------------------------------
@@ -24,10 +26,7 @@ agents = []
 # Create a group chat instance with automatic speaker selection.
 group_chat = GroupChat(
     speaker_selection_method="auto",
-    selector_config={
-        "model": "gpt-3.5-turbo",  # Specify model for speaker selection
-        "temperature": 0.7,  # Control randomness in responses
-    },
+    selector_config= llm_config
 )
 
 # -----------------------------------------------------------------------------
