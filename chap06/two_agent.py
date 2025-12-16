@@ -14,7 +14,7 @@ import sys
 # Module Setup
 # -----------------------------------------------------------------------------
 # Append the project root to sys.path for module discovery.
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
 # Import configuration settings from model_config.
 from model_config import *

@@ -83,6 +83,8 @@ class ContextWindowManager:
     def _calculate_priority(self, context: dict) -> float:
         """
         Calculates a priority score for the given context.
+        核心目的: 为每条上下文计算一个介于 0 到 1 的“优先级分数”，用于衡量其重要性。
+        应用场景: 决定是否接纳新上下文、按优先级排序返回上下文、在空间不足时优先淘汰低优先级项。
 
         Args:
             context (dict): Context data to evaluate.
