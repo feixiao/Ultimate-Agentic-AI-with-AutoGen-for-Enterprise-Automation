@@ -16,8 +16,8 @@ import sys
 # Append the project root to sys.path for module discovery.
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
-# Import configuration settings from model_config.
-from model_config import *
+# Import configuration settings from the chap06 package for direct script execution.
+from chap06 import llm_config
 
 # -----------------------------------------------------------------------------
 # Agent Initialization
