@@ -45,9 +45,9 @@ This project utilizes various Python libraries for natural language processing, 
    python3 -m venv .venv
    source .venv/bin/activate
 
-   uv python install  3.12 3.14   
+   <!-- uv python install  3.12 3.14   
    uv venv
-   source .venv/bin/activate
+   source .venv/bin/activate -->
    ```
 
    For Windows:

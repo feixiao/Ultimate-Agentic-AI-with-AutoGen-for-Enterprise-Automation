@@ -131,7 +131,7 @@ class CalculatorTool:
         try:
             # Generate arithmetic expression using the LLM agent
             response = self.user_proxy.initiate_chat(
-                self.expression_generator,
+                self.expression_generator, # 关联AssistantAgent
                 message=f"PROBLEM: {query}\nEXPRESSION:",
                 clear_history=True,
             )

@@ -13,10 +13,10 @@ import autogen
 from tool_calculator import CalculatorTool
 
 # Append the project root to sys.path for module discovery
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
 # Import configuration settings from model_config module
-from model_config import *
+from chap04 import llm_config
 
 # Initialize CalculatorTool with the provided LLM configuration
 calculator = CalculatorTool(llm_config)
